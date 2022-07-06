@@ -19,12 +19,15 @@ Após a criação dos dois algoritmos foi imcorporado ao algoritmo de "Jogo da V
 
 ### Estrutura do algoritmo
 **1. Foram criadas as funções:**
-- *def mostrarGrade(grade):* exibe a grade do jogo a cada nova jogada;
-- *def espacoLivre(posicao):* verifica a celula se está vazia para inserir o simbolo;
-- *def inserirSimbolo(simbolo,posicao):* insere o simbolo conforme a posisão;
-- *def verificarVitoria():* verifica a vitória do do jogador conforme os critérios do jogos retornando valor '1'.
-- *def verificarVencedor(escolha):* Verficar o vencedor conforme o simbolo escolhido retornando valor '-1';
-- *def verificarEmpate():* verifica empate retornado valor '0';
-- *def jogadorMovimento():* solicita ao jogador a posição a ser inserida entre 1 e 9;
-- *def Movimento():* insere a posição computada para maquina dentro da melhor posição maximizada;
-- *def minimax(grade, profundidade, maximizado):* responsável por percorrer os nós da "grade" conforme a profundidade até atingir o nó folha efetuando as podas conforme os valores minimizados e maximizando a melhor pontuação, entragando a melhor pontuação e melhor posição. Quando todas as posições forem precorridas será obtido um valor TRUE para valiável "maximizado".
+- **_def mostrarGrade(grade):_** exibe a grade do jogo a cada nova jogada;
+- **_def espacoLivre(posicao):_** verifica se a posição está vazia para inserir o simbolo;
+- **_def inserirSimbolo(simbolo,posicao):_** insere o simbolo conforme a posisão;
+- **_def verificarVitoria():_** verifica a vitória do do jogador conforme os critérios do jogos retornando valor '1'.
+- **_def verificarVencedor(escolha):_** verficar o vencedor conforme o simbolo escolhido retornando valor '-1';
+- **_def verificarEmpate():_** verifica empate retornado valor '0';
+- **_def jogadorMovimento():_** solicita ao jogador a posição a ser inserida entre 1 e 9;
+- **_def Movimento():_** insere a posição computada para maquina dentro da melhor posição maximizada;
+- **_def minimax(grade, profundidade, maximizado):_** responsável por percorrer os nós da "grade" conforme a profundidade até atingir o nó folha efetuando as podas conforme os valores minimizados e maximizando a melhor pontuação, entragando a melhor pontuação e melhor posição. Quando todas as posições forem precorridas será obtido um valor TRUE para valiável "maximizado".
+
+### Conclusão
+Durante a cada nova interação do jogador o algoritmo Minimax é acionado para verificar qual o melhor movimento trazendo a melhor pontuação e a melhor posição, dessa forma é possível percorrer cada nó efetuando as podas dos nós folhas quando atingido o valor maximizado, que seria o estado ótimo de vitória do jogo.
